@@ -1,0 +1,51 @@
+/*Example 1
+var input = prompt("Enter Your Text Here!"); 
+ alert("you have "+(300- input.length)+"characters left!" );
+ */
+
+/*Example 2 - string slicing 
+var input = prompt("Enter your Text Here !");
+alert(input.slice(0,141));
+*/
+
+/* Example 3 - string casting
+var input = prompt("Enter your text here!");
+alert("Hello,"+input.slice(0,1).toUpperCase() +input.slice(1,).toLowerCase());
+*/
+
+/*Example 4 - love calculator
+var nameOne = prompt("Enter first name");
+console.log("First name is : "+nameOne);
+var nameTwo = prompt("Enter Second name");
+console.log("Second name is : "+nameTwo);
+var randonNumberGen1 = Math.random();
+var randonNumberGen2 = Math.random();
+var randomNumber1 = Math.floor(randonNumberGen1*10)+1;
+var randomNumber2 = Math.floor(randonNumberGen2*10)+1;
+var matching = (randomNumber1 + randomNumber2)*100 /20
+console.log("The couple matches, "+ matching + " percent" )
+*/
+
+
+
+function bmiCalculator (weight, height) {
+  var  bmi = weight / (height*height)
+    if (bmi < 18.5){
+        return "you are under weight "+bmi
+    }
+     if (bmi > 18.5 && bmi < 24.9){
+        return "you have normal weight "+bmi
+    }
+     if (bmi > 25 && bmi < 29.9){
+        return "you have over weight "+bmi
+    }
+    if (bmi > 30 && bmi < 34.9){
+        return "you are obsese "+bmi
+    }
+    else{
+         return "you are extremly obese "+bmi
+    }
+   
+}
+
+bmiCalculator(63,1.8)

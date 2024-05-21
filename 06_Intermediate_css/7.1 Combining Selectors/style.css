@@ -1,0 +1,16 @@
+/* Write your code here: */
+h1 ,h2{ /* grouping selector using comma */
+    color: blueviolet;
+}
+.box > p{/*applying property using parentchild property this grouping can be done to direct descendent*/
+    color: firebrick;
+}
+.box li{/*grouping using descendent property(grand child too)*/
+    color: blue;
+}
+li.done{  /* chain selector for selecting mutiple chain*/
+    color: green; 
+}
+ul>p.done{/* chaining the css selector for more specific property*/
+    font-size: 0.5rem;
+}
